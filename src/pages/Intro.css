@@ -1,0 +1,17 @@
+.pageContainer{
+}
+.introContainer h1{
+    margin: 0 0;
+}
+.bttnContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.introName{
+    font-size: 3.2rem;
+    line-height: 1.1;
+}
+.introText{
+    font-size: 2rem;
+}
