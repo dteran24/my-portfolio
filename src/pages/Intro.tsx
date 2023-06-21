@@ -1,18 +1,18 @@
-import "./Intro.css";
+import styles from "./Intro.module.css";
 
 function Intro() {
   return (
-    <div className="pageContainer">
-      <div className="introContainer">
-        <h1 className="introText">Hey There! My name is</h1>
+    <div className={styles.pageContainer}>
+      <div className={styles.introContainer}>
+        <h1 className={styles.introText}>Hey There! My name is</h1>
         <br />
-        <h1 className="introName">Daniel Teran</h1>
+        <h1 className={styles.introName}>Daniel Teran</h1>
         <br />
-        <h1 className="introText">I am a Software Engineer.</h1>
+        <h1 className={styles.introText}>I am a Software Engineer.</h1>
       </div>
-      <div className="bttnContainer">
-        <button>Linkedin</button>
-        <button>Github</button>
+      <div className={styles.bttnContainer}>
+        <a href="https://github.com/dteran24"><button className={styles.primaryBttn}>Linkedin</button></a>
+        <a href="https://www.linkedin.com/in/daniel-teran-/"><button className={styles.secondaryBttn}>Github</button></a>
       </div>
     </div>
   );

@@ -1,0 +1,35 @@
+.pageContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introContainer h1{
+    margin: 0 0;
+}
+.bttnContainer{
+    display: flex;
+    width: 50%;
+    min-width: 250px;
+    justify-content: space-around;
+    margin: 2rem auto;
+
+}
+.introName{
+    font-size: 6rem;
+    line-height: 1.1;
+}
+.introText{
+    font-size: 2rem;
+}
+
+button{
+    width: 120px;
+}
+.primaryBttn{
+    
+}
+.secondaryBttn{
+    
+}

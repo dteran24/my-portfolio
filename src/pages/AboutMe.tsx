@@ -1,23 +1,21 @@
-import "./AboutMe.css";
+import styles from "./AboutMe.module.css";
 function AboutMe() {
   return (
-    <div className="aboutMeContainer">
+    <div className={styles.aboutMeContainer}>
       <h1>About Me</h1>
-      <p className="aboutMeParagraph">
-        I love to build new things and constantly working to improve and learn
-        new technologies. It is a great satisfaction being able to add new
-        features to projects or even fixing a bug that took 4 hours to find (we
-        all have been there). I have worked with and even lead teams in my past
-        work experiences. I work well with others and easily adaptable. I am
-        interested in contributing as well as learning from an established team.
-      </p>
-      <div className="webContainer">
-        <h2>Web Development</h2>
-        <p></p>
-      </div>
-      <div className="mobileContainer">
-        <h2>Mobile Development</h2>
-        <p></p>
+      <div className={styles.paragraphContainer}>
+        <p>
+          I have a passion for building and creating, constantly striving to
+          enhance my skills and explore emerging technologies. There's an
+          immense satisfaction in adding innovative features to projects or
+          solving complex bugs after investing hours of dedicated effort (we've
+          all experienced those moments). Throughout my professional journey, I
+          have not only collaborated with diverse teams but also taken on
+          leadership roles. I excel in working harmoniously with others and
+          possess a natural adaptability. I am eager to contribute to an
+          established team, while also embracing the opportunity to learn and
+          grow alongside my peers.
+        </p>
       </div>
     </div>
   );
