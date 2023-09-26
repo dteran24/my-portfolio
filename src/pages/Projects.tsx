@@ -7,7 +7,7 @@ function Projects() {
     <section className={styles.projects} id="projects">
       <h1>Projects</h1>
       {projects.projects.map((project) => {
-        return <ProjectCard project={project} />;
+        return <ProjectCard project={project} key={project.id}/>;
       })}
     </section>
   );
