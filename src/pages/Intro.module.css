@@ -3,25 +3,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    column-gap: 0px;
-    background-color: #611010;
-}
-.introContainer{
-    margin-bottom: 12rem;
+    align-items: center;
 }
 .introContainer h1{
     margin: 0 0;
 }
 .bttnContainer{
     display: flex;
-    width: 10%;
+    width: 50%;
     min-width: 250px;
     justify-content: space-around;
     margin: 2rem auto;
 
 }
 .introName{
-    color: #e8e6e6;
     font-size: 6rem;
     line-height: 1.1;
 }
@@ -29,13 +24,8 @@
     font-size: 2rem;
 }
 
-.iconBttn{
-    background: none;
-    border: none;
-    padding: 0;
-}
-.icon{
-    font-size: 2rem;
+button{
+    width: 120px;
 }
 .primaryBttn{
     

@@ -1,10 +1,10 @@
-.card {
+.container {
   margin: 16px 0px;
-  background-color: antiquewhite;
+  border: 2px black solid;
   border-radius: 4px;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .container p {
   padding: 0px 12px;
