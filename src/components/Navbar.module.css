@@ -1,4 +1,6 @@
 .nav-container {
+    background-color: #611010;
+    color:#e8e6e6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,12 +8,15 @@
     height: 4rem;
     position: sticky;
     top: 0;
-    transition: background-color 0.3s; /* Add a smooth transition for background color change */
+    transition: background-color 0.3s;
+    
+ 
   }
   
   .nav-container.scrolled {
-    background-color: black;
-    color: aliceblue;
+    background-color: #e8e6e6;
+    color: black;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
   }
   
   ul {

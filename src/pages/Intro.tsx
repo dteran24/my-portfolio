@@ -1,4 +1,5 @@
 import styles from "./Intro.module.css";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 function Intro() {
   return (
@@ -9,11 +10,19 @@ function Intro() {
         <h1 className={styles.introName}>Daniel Teran</h1>
         <br />
         <h1 className={styles.introText}>I am a Software Engineer.</h1>
+        {/* <div className={styles.bttnContainer}>
+          <a href="https://www.linkedin.com/in/daniel-teran-/" target="_blank">
+            <button className={styles.iconBttn}>
+              <AiFillLinkedin className={styles.icon} />
+            </button>
+          </a>
+          <a href="https://github.com/dteran24" target="_blank">
+            <button className={styles.iconBttn}>
+              <AiFillGithub className={styles.icon} />
+            </button>
+          </a>
+        </div> */}
       </div>
-      {/* <div className={styles.bttnContainer}>
-        <a href="https://www.linkedin.com/in/daniel-teran-/" target="_blank"><button className={styles.primaryBttn}>Linkedin</button></a>
-        <a href="https://github.com/dteran24" target="_blank"><button className={styles.secondaryBttn}>Github</button></a>
-      </div> */}
     </section>
   );
 }
