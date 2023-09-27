@@ -10,7 +10,7 @@ function Projects() {
         {projects.projects.map((project, index) => {
           return (
             <div
-              className={`${index === 1 ? styles.oneColumn : ""}`}
+              className={`${index === 0 ? styles.oneColumn : ""}`}
               key={project.id}
             >
               <ProjectCard project={project} />

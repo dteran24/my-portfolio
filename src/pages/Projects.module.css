@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns *//* Two rows */
     grid-template-rows: 24rem 18rem;
-    gap: 2.5rem; /* Optional gap between grid items */
+    gap: 3rem; /* Optional gap between grid items */
 }
 .oneColumn {
     grid-row: span 2;
