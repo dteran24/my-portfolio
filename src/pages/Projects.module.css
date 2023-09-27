@@ -1,4 +1,14 @@
-.projects{
-    margin: 0 2rem;
-
+.projects {
+  margin: 0 2rem;
 }
+.cards {
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns *//* Two rows */
+    grid-template-rows: 24rem 18rem;
+    gap: 2.5rem; /* Optional gap between grid items */
+}
+.oneColumn {
+    grid-row: span 2;
+}
+

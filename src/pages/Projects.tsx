@@ -6,9 +6,18 @@ function Projects() {
   return (
     <section className={styles.projects} id="projects">
       <h1>Projects</h1>
-      {projects.projects.map((project) => {
-        return <ProjectCard project={project} key={project.id}/>;
-      })}
+      <div className={styles.cards}>
+        {projects.projects.map((project, index) => {
+          return (
+            <div
+              className={`${index === 1 ? styles.oneColumn : ""}`}
+              key={project.id}
+            >
+              <ProjectCard project={project} />
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }

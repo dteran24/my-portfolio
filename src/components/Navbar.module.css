@@ -8,6 +8,7 @@
     top: 0;
     background-color: #4d040c;
     transition: background-color 0.3s; /* Add a smooth transition for background color change */
+    z-index: 1;
   }
   
   .nav-container.scrolled {
