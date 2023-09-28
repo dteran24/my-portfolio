@@ -12,11 +12,11 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
   return (
     <>
       {project.id === 1 ? (
-        <div className={styles["card-first"]}>
+        <div className={styles.card}>
           <img></img>
           <h3>{project.title}</h3>
           <p>{project.description}</p>
-          <div className={styles["bttn-container"]}>
+          <div className={styles["bttn-container-first"]}>
             <a
               href={project.codeLink}
               target="_blank"
@@ -38,6 +38,11 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
               </button>
             </a>
           </div>
+          <ul className={styles.tech + " " + styles.first}>
+            {project.tech.map((word) => {
+              return <li>{word}</li>;
+            })}
+          </ul>
         </div>
       ) : (
         <>
@@ -50,6 +55,11 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
               <img></img>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <ul className={styles.tech}>
+                {project.tech.map((word) => {
+                  return <li>{word}</li>;
+                })}
+              </ul>
             </div>
             <div
               className={

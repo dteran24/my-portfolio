@@ -5,5 +5,6 @@ type Project = {
   description: string;
   liveLink: string;
   codeLink: string;
+  tech: string[];
 };
 export default Project;

@@ -1,28 +1,39 @@
 {
   "projects": [
     {
-      "id":1,
-      "title": "Online Store",
-      "description": "A website where you can shop for items, add to cart and checkout. There was a probelm displaying multiple items of the same type to cart. The solution was creating a function that if the item was already on the list to just add the quantity property. I made this project to better understand components and how to make them work together. The use of global context or redux would be an improvement to prevent prop drilling.",
-      "image": "",
-      "liveLink": "",
-      "codeLink": "https://github.com/dteran24/e-Commerce"
-    },
-    {
-      "id":2,
+      "id": 1,
       "title": "Scool Parent App",
       "description": "A user is able to fill out form with certain requirements. They are also able to edit their form. A teacher is a ble to view all forms. A fullstack application using React.js, node.js and mySql.",
       "image": "",
       "liveLink": "",
-      "codeLink": "https://github.com/dteran24/sp-app"
+      "codeLink": "https://github.com/dteran24/sp-app",
+      "tech": [
+        "React.js",
+        "BootStrap",
+        "SQLite",
+        "Node.js",
+        "Express.js",
+        "TypeScript",
+        "GitHub"
+      ]
     },
     {
-      "id":3,
+      "id": 2,
+      "title": "Online Store",
+      "description": "A website where you can shop for items, add to cart and checkout. There was a probelm displaying multiple items of the same type to cart. The solution was creating a function that if the item was already on the list to just add the quantity property. I made this project to better understand components and how to make them work together. The use of global context or redux would be an improvement to prevent prop drilling.",
+      "image": "",
+      "liveLink": "",
+      "codeLink": "https://github.com/dteran24/e-Commerce",
+      "tech": ["React.js", "BootStrap", "Netlify", "GitHub"]
+    },
+    {
+      "id": 3,
       "title": "Lift Notes",
       "description": "A user is able to keep track if his performance in the weight room.",
       "image": "",
       "liveLink": "",
-      "codeLink": "https://github.com/dteran24/lift-notesv2"
+      "codeLink": "https://github.com/dteran24/lift-notesv2",
+      "tech": ["React.js", "TypeScript", "Ionic", "SpringBoot", "GitHub"]
     }
   ]
 }
