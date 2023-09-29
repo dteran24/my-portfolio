@@ -1,37 +1,47 @@
-.pageContainer{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #4d040c;
+.pageContainer {
+  text-align: left;
+  height: 100vh;
+  background-color: #4d040c;
 }
-.introContainer h1{
-    margin: 0 0;
+.introContainer {
+  padding-top: 10rem;
+  padding-left: 6rem;
 }
-.bttnContainer{
-    display: flex;
-    width: 50%;
-    min-width: 250px;
-    justify-content: space-around;
-    margin: 2rem auto;
+.introContainer h1 {
+  margin: 0;
+}
+.bttnContainer {
+  display: flex;
+  width: 50%;
+  min-width: 250px;
+  justify-content: space-around;
+  margin: 2rem auto;
+}
+.introName {
+  font-size: 6rem;
+  line-height: 0.4;
+  color: whitesmoke;
+}
+.introText {
+    font-weight: normal;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.introSub {
+    font-weight: normal;
+  font-size: 2rem;
+  color: #ac6069;
+}
+.introParagraph {
+    margin: 0;
+  font-size: 1rem;
+  color: #ac6069;
+}
 
+button {
+  width: 120px;
 }
-.introName{
-    font-size: 6rem;
-    line-height: 1.1;
-    color: whitesmoke;
+.primaryBttn {
 }
-.introText{
-    font-size: 2rem;
-}
-
-button{
-    width: 120px;
-}
-.primaryBttn{
-    
-}
-.secondaryBttn{
-    
+.secondaryBttn {
 }

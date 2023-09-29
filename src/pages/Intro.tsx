@@ -6,9 +6,10 @@ function Intro() {
       <div className={styles.introContainer}>
         <h1 className={styles.introText}>Hey There! My name is</h1>
         <br />
-        <h1 className={styles.introName}>Daniel Teran</h1>
+        <h1 className={styles.introName}>Daniel Teran.</h1>
         <br />
-        <h1 className={styles.introText}>I am a Software Engineer.</h1>
+        <h1 className={styles.introSub}>I am a Software Engineer.</h1>
+        <p className={styles.introParagraph}>Focusing on gaining new experiences and always trying to improve.</p>
       </div>
       {/* <div className={styles.bttnContainer}>
         <a href="https://www.linkedin.com/in/daniel-teran-/" target="_blank"><button className={styles.primaryBttn}>Linkedin</button></a>
