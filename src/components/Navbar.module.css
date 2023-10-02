@@ -94,20 +94,40 @@
   -o-transform: translateY(-12px) rotate(-45deg);
   transform: translateY(-12px) rotate(-45deg);
 }
-
-ul {
-  margin-top: 5rem;
-  margin-right: 2.5rem;
-  padding: none;
-  justify-content: center;
+.nav-container ul {
   list-style-type: none;
+  padding: none;
+}
+.nav-container li {
+  overflow: hidden;
 }
 
-li {
- font-size: 1rem;
-  margin-bottom: 1rem;
+.nav-container a {
   cursor: pointer;
+  color: black;
 }
-a{
+
+.navList {
+  margin-right: 2.5rem;
+  margin-bottom: 0;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.navListItem {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.iconList {
+  margin-right: 1rem;
+  margin-top: 0;
+  display: flex;
+}
+.iconListItem {
+  margin-right: .9rem;
+}
+.nav-container a {
   font-size: 2rem;
 }
+

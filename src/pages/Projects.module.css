@@ -1,6 +1,9 @@
 .projects {
   margin: 0 2rem;
 }
+.projects h1{
+  text-align: left;
+}
 .cards {
     padding-bottom: 3rem;
     display: grid;

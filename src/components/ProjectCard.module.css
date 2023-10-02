@@ -58,6 +58,9 @@ a {
 .tech.first{
   margin-top: 0;
 }
+.tech{
+  list-style: none;
+}
 .tech li{
   margin-right: 1rem;
 }

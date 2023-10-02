@@ -1,9 +1,19 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { HiDocumentText } from "react-icons/hi";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const links = [
+    {
+      icon: <AiFillLinkedin />,
+      link: "https://www.linkedin.com/in/daniel-teran-/",
+    },
+    { icon: <AiFillGithub />, link: "https://github.com/dteran24" },
+    { icon: <HiDocumentText />, link: "public/Tech_Resume.pdf" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,47 +55,60 @@ const Navbar = () => {
         <span className={lineClass}></span>
       </div>
       {isOpen ? (
-        <ul>
-          <li>
-            <Link
-              onClick={() => setIsOpen(false)}
-              activeClass="active"
-              to="intro"
-              spy={true}
-              smooth={true}
-              offset={-400}
-              duration={500}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={() => setIsOpen(false)}
-              activeClass="active"
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={-490}
-              duration={500}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={() => setIsOpen(false)}
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <>
+          <ul className={styles.navList}>
+            <li className={styles.navListItem}>
+              <Link
+                onClick={() => setIsOpen(false)}
+                activeClass="active"
+                to="intro"
+                spy={true}
+                smooth={true}
+                offset={-400}
+                duration={500}
+              >
+                Home
+              </Link>
+            </li>
+            <li className={styles.navListItem}>
+              <Link
+                onClick={() => setIsOpen(false)}
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-490}
+                duration={500}
+              >
+                Projects
+              </Link>
+            </li>
+            <li className={styles.navListItem}>
+              <Link
+                onClick={() => setIsOpen(false)}
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+          <ul className={styles.iconList}>
+            {links.map((item) => {
+              return (
+                <li className={styles.iconListItem}>
+                  <a href={item.link} target="_blank">
+                    {item.icon}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </>
       ) : (
         ""
       )}
