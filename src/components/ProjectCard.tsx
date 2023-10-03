@@ -1,6 +1,10 @@
 import styles from "./ProjectCard.module.css";
 import { BsCodeSlash } from "react-icons/bs";
 import { CgScreen } from "react-icons/cg";
+import { BiDumbbell } from "react-icons/bi";
+import { BsRocketTakeoffFill } from "react-icons/bs";
+import { MdLocalGroceryStore } from "react-icons/md";
+
 import Project from "../models/ProjectModel";
 import { useState } from "react";
 interface projectProp {
@@ -9,6 +13,17 @@ interface projectProp {
 function ProjectCard(props: React.PropsWithChildren<projectProp>) {
   const { project } = props;
   const [hover, setHover] = useState(false);
+
+  const iconMapping: {
+    [key: string]: JSX.Element;
+    rocket: JSX.Element;
+    store: JSX.Element;
+    dumbell: JSX.Element;
+  } = {
+    rocket: <BsRocketTakeoffFill />,
+    store: <MdLocalGroceryStore color="black" fontSize="3rem" />,
+    dumbell: <BiDumbbell color="black" fontSize="3rem" />,
+  };
   return (
     <>
       {project.id === 1 ? (
@@ -52,8 +67,10 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
             onMouseLeave={() => setHover(false)}
           >
             <div className={styles.card}>
-              <img></img>
-              <h3>{project.title}</h3>
+              <div className={styles["card-header"]}>
+                {iconMapping[project.icon]}
+                <h3>{project.title}</h3>
+              </div>
               <p>{project.description}</p>
               <ul className={styles.tech}>
                 {project.tech.map((word) => {
