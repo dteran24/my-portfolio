@@ -9,8 +9,13 @@
 
   overflow: hidden;
 }
+.card p {
+  text-align: left;
+  margin: 0;
+  padding: 0 1rem;
+}
 .card h3 {
-  font-weight: normal;
+  font-weight: 500;
 }
 .card-container {
   height: 100%;
@@ -20,26 +25,22 @@
 .card-container:hover {
   transform: translateY(-2rem);
 }
+
 .card-header {
   font-size: 1.5rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
-
-.react-icons {
-  font-size: 5rem;
-}
-
-.container p {
-  padding: 0px 12px;
+.icon {
+  padding-top: 4rem;
 }
 .bttn-container-first {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   margin-top: auto;
 }
 .bttn-container {
@@ -61,6 +62,7 @@ a {
 }
 
 .tech {
+  font-size: 0.75rem;
   display: flex;
   justify-content: flex-start;
   gap: 0;
@@ -77,6 +79,18 @@ a {
   margin-right: 1rem;
 }
 
+.bttn.first {
+  background-color: #0087ca;
+  color: black;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.401), 0 0px 0px rgba(0, 0, 0, 0.179),
+    1px 0px 1px rgba(0, 0, 0, 0.267), -1px 0px 1px rgba(0, 0, 0, 0.267);
+}
+.bttn.first:hover {
+  color: black;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.401), 0 0px 0px rgba(0, 0, 0, 0.179),
+    2px 0px 3px rgba(0, 0, 0, 0.267), -2px 0px 3px rgba(0, 0, 0, 0.267);
+}
+
 .bttn {
   display: flex;
   align-items: center;
@@ -84,4 +98,8 @@ a {
   gap: 8px;
   background: transparent;
   color: black;
+  transition: all 0.3s ease-in-out;
+}
+.bttn:hover {
+  color: #0087ca;
 }

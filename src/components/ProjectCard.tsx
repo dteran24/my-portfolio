@@ -20,16 +20,16 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
     store: JSX.Element;
     dumbell: JSX.Element;
   } = {
-    rocket: <BsRocketTakeoffFill />,
-    store: <MdLocalGroceryStore color="black" fontSize="3rem" />,
-    dumbell: <BiDumbbell color="black" fontSize="3rem" />,
+    rocket: <BsRocketTakeoffFill color="black" fontSize="8rem" />,
+    store: <MdLocalGroceryStore color="lightblue" fontSize="3rem" />,
+    dumbell: <BiDumbbell color="gray" fontSize="3rem" />,
   };
   return (
     <>
       {project.id === 1 ? (
         <div className={styles.card}>
-          <img></img>
-          <h3>{project.title}</h3>
+          <div className={styles.icon}>{iconMapping[project.icon]}</div>
+          <h3 className={styles["card-header"]}>{project.title}</h3>
           <p>{project.description}</p>
           <div className={styles["bttn-container-first"]}>
             <a
@@ -37,7 +37,7 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className={styles["bttn"]}>
+              <button className={`${styles.bttn} ${styles.first}`}>
                 <BsCodeSlash />
                 Code
               </button>
@@ -47,7 +47,7 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className={styles["bttn"]}>
+              <button className={`${styles.bttn} ${styles.first}`}>
                 <CgScreen />
                 Live
               </button>
