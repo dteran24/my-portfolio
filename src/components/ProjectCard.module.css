@@ -34,13 +34,13 @@
   gap: 2rem;
 }
 .icon {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 .bttn-container-first {
   display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-  padding-bottom: 1.5rem;
+  justify-content: center;
+  gap: 4rem;
+  padding-bottom: 2rem;
   margin-top: auto;
 }
 .bttn-container {

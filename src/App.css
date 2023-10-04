@@ -1,8 +1,9 @@
 #root {
   margin: 0 auto;
   text-align: center;
-  
+  color: rgb(116, 116, 115); 
 }
 h1{
   font-size: 3.5rem;
 }
+
