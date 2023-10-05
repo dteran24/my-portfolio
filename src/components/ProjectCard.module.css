@@ -38,10 +38,12 @@
 }
 .bttn-container-first {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: space-around;
   padding-bottom: 2rem;
   margin-top: auto;
+}
+.bttn-container-first button{
+  width: 10rem;
 }
 .bttn-container-mobile{
   display: none;
