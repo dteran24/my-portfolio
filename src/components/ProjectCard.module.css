@@ -6,7 +6,6 @@
   border-radius: 4px;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.401), 0 0px 0px rgba(0, 0, 0, 0.179),
     2px 0px 3px rgba(0, 0, 0, 0.267), -2px 0px 3px rgba(0, 0, 0, 0.267);
-
   overflow: hidden;
 }
 .card p {
@@ -34,12 +33,20 @@
   gap: 2rem;
 }
 .icon {
+  text-align: center;
   padding-top: 2rem;
 }
 .bttn-container-first {
   display: flex;
   justify-content: center;
   gap: 4rem;
+  padding-bottom: 2rem;
+  margin-top: auto;
+}
+.bttn-container-mobile{
+  display: none;
+  justify-content: center;
+  gap: 1rem;
   padding-bottom: 2rem;
   margin-top: auto;
 }
@@ -60,7 +67,6 @@
 a {
   text-decoration: none;
 }
-
 .tech {
   font-size: 0.75rem;
   display: flex;
@@ -68,6 +74,7 @@ a {
   gap: 0;
   padding-left: 1rem;
   margin-top: auto;
+  flex-wrap: wrap;
 }
 .tech.first {
   margin-top: 0;
@@ -102,4 +109,28 @@ a {
 }
 .bttn:hover {
   color: #0087ca;
+}
+@media only screen and (max-width: 868px) {
+  .card-container:hover {
+    transform: none; /* Disable the transform on hover */
+  }
+  .bttn-container{
+    display: none;
+  }
+  .bttn-container-first{
+    padding: 1rem 1rem;
+    
+  }
+  .bttn-container-mobile{
+    justify-content: space-around;
+    display: flex;
+    padding: 1rem 0;
+  }
+  .bttn-container-first{
+    justify-content: space-around;
+  }
+  .bttn{
+    width: 8rem;
+  }
+
 }

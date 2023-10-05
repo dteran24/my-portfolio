@@ -1,11 +1,13 @@
 .pageContainer {
+  display: flex;
+  align-items: center;
   text-align: left;
   height: 100vh;
   background-color: #4d040c;
 }
 .introContainer {
-  padding-top: 10rem;
-  padding-left: 6rem;
+  margin-left: 6rem;
+  margin-bottom: 6rem;
 }
 .introContainer h1 {
   margin: 0;
@@ -38,10 +40,18 @@
   color: #ac6069;
 }
 
-button {
-  width: 120px;
-}
-.primaryBttn {
-}
-.secondaryBttn {
+@media only screen and (max-width: 767px) {
+  .introContainer {
+    margin-left: 1rem;
+    margin-bottom: 6rem;
+  }
+  .introText{
+    font-size: 1.5rem;
+  }
+  .introName {
+    font-size: 3rem;
+  }
+  .introSub{font-size: 1.5rem;}
+  .introParagraph{font-size: 1rem;}
+
 }

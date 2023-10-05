@@ -33,16 +33,6 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
           <p>{project.description}</p>
           <div className={styles["bttn-container-first"]}>
             <a
-              href={project.codeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className={`${styles.bttn} ${styles.first}`}>
-                <BsCodeSlash />
-                Code
-              </button>
-            </a>
-            <a
               href={project.liveLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -50,6 +40,16 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
               <button className={`${styles.bttn} ${styles.first}`}>
                 <CgScreen />
                 Live
+              </button>
+            </a>
+            <a
+              href={project.codeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className={`${styles.bttn} ${styles.first}`}>
+                <BsCodeSlash />
+                Code
               </button>
             </a>
           </div>
@@ -72,6 +72,28 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
                 <h3>{project.title}</h3>
               </div>
               <p>{project.description}</p>
+              <div className={styles["bttn-container-mobile"]}>
+                <a
+                  href={project.codeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className={`${styles.bttn} ${styles.first}`}>
+                    <BsCodeSlash />
+                    Code
+                  </button>
+                </a>
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className={`${styles.bttn} ${styles.first}`}>
+                    <CgScreen />
+                    Live
+                  </button>
+                </a>
+              </div>
               <ul className={styles.tech}>
                 {project.tech.map((word) => {
                   return <li>{word}</li>;
@@ -86,16 +108,6 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
               }
             >
               <a
-                href={project.codeLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className={styles["bttn"]}>
-                  <BsCodeSlash />
-                  Code
-                </button>
-              </a>
-              <a
                 href={project.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -103,6 +115,16 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
                 <button className={styles["bttn"]}>
                   <CgScreen />
                   Live
+                </button>
+              </a>
+              <a
+                href={project.codeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className={styles["bttn"]}>
+                  <BsCodeSlash />
+                  Code
                 </button>
               </a>
             </div>

@@ -3,18 +3,29 @@
   margin: 0 6rem;
   padding-bottom: 1rem;
 }
-.projects h1{
+.projects h1 {
   font-weight: 500;
   text-align: left;
   color: black;
 }
 .cards {
-    display: grid;
-    grid-template-columns: 50% auto; /* Two columns *//* Two rows */
-    grid-template-rows: 12rem 14rem;
-    gap: 4rem; /* Optional gap between grid items */
+  display: grid;
+  grid-template-columns: 50% auto; /* Two columns */ /* Two rows */
+  grid-template-rows: 12rem 14rem;
+  gap: 4rem; /* Optional gap between grid items */
 }
 .oneColumn {
-    grid-row: span 2;
+  grid-row: span 2;
 }
-
+@media only screen and (max-width: 868px) {
+  .projects{
+    margin: 1rem;
+  }
+  .cards {
+  display: flex;
+  flex-direction: column;
+  }
+  .projects h1{
+    font-size: 2rem;
+  }
+}
