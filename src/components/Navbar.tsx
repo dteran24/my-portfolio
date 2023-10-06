@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
@@ -12,7 +12,7 @@ const Navbar = () => {
       link: "https://www.linkedin.com/in/daniel-teran-/",
     },
     { icon: <AiFillGithub />, link: "https://github.com/dteran24" },
-    { icon: <HiDocumentText />, link: "public/Tech_ResumeM.pdf" },
+    { icon: <HiDocumentText />, link: "public/resume.pdf" },
   ];
 
   useEffect(() => {
@@ -31,6 +31,30 @@ const Navbar = () => {
     };
   }, []);
 
+  const navbarRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        navbarRef.current &&
+        event.target instanceof Node &&
+        !navbarRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      // Add the event listener when the navbar is open
+      document.addEventListener("click", handleClickOutside);
+    }
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isOpen]);
+
   const navbarClass = `${styles["nav-container"]} ${
     isScrolled ? styles.scrolled : ""
   } ${isOpen ? styles.active : ""}`;
@@ -40,7 +64,7 @@ const Navbar = () => {
   }`;
 
   return (
-    <nav className={navbarClass}>
+    <nav className={navbarClass} ref={navbarRef}>
       <div
         className={
           isOpen

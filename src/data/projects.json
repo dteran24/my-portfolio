@@ -6,7 +6,7 @@
       "icon": "rocket",
       "description": "Parents create and update profiles easily, while teachers efficiently approve or reject submissions. A three week project to test requirement and quick delivery.",
       "image": "",
-      "liveLink": "",
+      "liveLink": "https://spa-03d0.onrender.com/",
       "codeLink": "https://github.com/dteran24/sp-app",
       "tech": [
         "React.js",
@@ -34,7 +34,7 @@
       "icon": "dumbell",
       "description": "A mobile app where a user is able to keep track of their performance in the weight room.",
       "image": "",
-      "liveLink": "",
+      "liveLink": "https://liftnotes.onrender.com/",
       "codeLink": "https://github.com/dteran24/lift-notesv2",
       "tech": [
         "React.js",
