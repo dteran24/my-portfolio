@@ -12,7 +12,7 @@ const Navbar = () => {
       link: "https://www.linkedin.com/in/daniel-teran-/",
     },
     { icon: <AiFillGithub />, link: "https://github.com/dteran24" },
-    { icon: <HiDocumentText />, link: "public/resume.pdf" },
+    { icon: <HiDocumentText />, link: "/resume.pdf" },
   ];
 
   useEffect(() => {
