@@ -34,7 +34,7 @@
       "icon": "dumbell",
       "description": "A mobile app where a user is able to keep track of their performance in the weight room.",
       "image": "",
-      "liveLink": "https://liftnotes.onrender.com/",
+      "liveLink": "",
       "codeLink": "https://github.com/dteran24/lift-notesv2",
       "tech": [
         "React.js",

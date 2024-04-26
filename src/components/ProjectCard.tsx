@@ -63,10 +63,9 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
         <>
           <div
             className={styles["card-container"]}
-            onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
           >
-            <div className={styles.card}>
+            <div className={styles.card} onMouseEnter={() => setHover(true)}>
               <div className={styles["card-header"]}>
                 {iconMapping[project.icon]}
                 <h3>{project.title}</h3>

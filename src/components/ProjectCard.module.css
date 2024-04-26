@@ -4,8 +4,7 @@
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.401), 0 0px 0px rgba(0, 0, 0, 0.179),
-    2px 0px 3px rgba(0, 0, 0, 0.267), -2px 0px 3px rgba(0, 0, 0, 0.267);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden;
 }
 .card p {
@@ -42,10 +41,10 @@
   padding-bottom: 2rem;
   margin-top: auto;
 }
-.bttn-container-first button{
+.bttn-container-first button {
   width: 10rem;
 }
-.bttn-container-mobile{
+.bttn-container-mobile {
   display: none;
   justify-content: center;
   gap: 1rem;
@@ -96,8 +95,7 @@ a {
 }
 .bttn.first:hover {
   color: black;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.401), 0 0px 0px rgba(0, 0, 0, 0.179),
-    2px 0px 3px rgba(0, 0, 0, 0.267), -2px 0px 3px rgba(0, 0, 0, 0.267);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.22);
 }
 
 .bttn {
@@ -116,26 +114,24 @@ a {
   .card-container:hover {
     transform: none; /* Disable the transform on hover */
   }
-  .bttn-container{
+  .bttn-container {
     display: none;
   }
-  .bttn-container-first{
+  .bttn-container-first {
     padding: 1rem 1rem;
-    
   }
-  .bttn-container-mobile{
+  .bttn-container-mobile {
     justify-content: space-around;
     display: flex;
     padding: 1rem 0;
   }
-  .bttn-container-first{
+  .bttn-container-first {
     justify-content: space-around;
   }
-  .bttn-container-first button{
+  .bttn-container-first button {
     width: 8rem;
   }
-  .bttn{
+  .bttn {
     width: 8rem;
   }
-
 }
