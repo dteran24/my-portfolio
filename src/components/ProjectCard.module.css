@@ -114,6 +114,10 @@ a {
   .card-container:hover {
     transform: none; /* Disable the transform on hover */
   }
+  .card-header {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
   .bttn-container {
     display: none;
   }
