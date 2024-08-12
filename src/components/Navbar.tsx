@@ -59,26 +59,21 @@ const Navbar = () => {
     isScrolled ? styles.scrolled : ""
   } ${isOpen ? styles.active : ""}`;
 
-  const lineClass = `${styles.line} ${
-    isScrolled || isOpen ? styles.scrolled : ""
-  }`;
-
+  const lineClass = `${isScrolled || isOpen ? styles.scrolled : ""}`;
   return (
     <nav className={navbarClass} ref={navbarRef}>
-      <div
-        className={
-          isOpen
-            ? styles.hamburger + " " + styles["is-active"]
-            : styles.hamburger
-        }
-        id="hamburger-9"
-        onClick={() => setIsOpen((prev) => !prev)}
-      >
+      <label htmlFor="check">
+        <input
+          checked={isOpen}
+          type="checkbox"
+          id="check"
+          onClick={() => setIsOpen((prev) => !prev)}
+        />
         <span className={lineClass}></span>
         <span className={lineClass}></span>
         <span className={lineClass}></span>
-      </div>
-      {isOpen ? (
+      </label>
+      {isOpen && (
         <>
           <ul className={styles.navList}>
             <li className={styles.navListItem}>
@@ -120,21 +115,19 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-          </ul>
-          <ul className={styles.iconList}>
-            {links.map((item) => {
-              return (
-                <li className={styles.iconListItem}>
-                  <a href={item.link} target="_blank">
-                    {item.icon}
-                  </a>
-                </li>
-              );
-            })}
+            <ul className={styles.iconList}>
+              {links.map((item) => {
+                return (
+                  <li className={styles.iconListItem}>
+                    <a href={item.link} target="_blank">
+                      {item.icon}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
           </ul>
         </>
-      ) : (
-        ""
       )}
     </nav>
   );
