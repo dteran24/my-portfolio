@@ -12,7 +12,7 @@ const Navbar = () => {
       link: "https://www.linkedin.com/in/daniel-teran-/",
     },
     { icon: <AiFillGithub />, link: "https://github.com/dteran24" },
-    { icon: <HiDocumentText />, link: "/resume.pdf" },
+    { icon: <HiDocumentText />, link: "/D.Teran_Resume.pdf" },
   ];
 
   useEffect(() => {
@@ -96,7 +96,7 @@ const Navbar = () => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-490}
+                offset={-100}
                 duration={500}
               >
                 Projects
