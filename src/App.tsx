@@ -1,20 +1,18 @@
-import './App.css'
-import Navbar from './components/Navbar'
-// import AboutMe from './pages/AboutMe'
-import Intro from './pages/Intro'
-import Projects from './pages/Projects'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import AboutMe from "./pages/AboutMe";
+import Intro from "./pages/Intro";
+import Projects from "./pages/Projects";
 
 function App() {
-  
-
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Intro />
-      {/* <AboutMe /> */}
-      <Projects/>
+      <Projects />
+      <AboutMe />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

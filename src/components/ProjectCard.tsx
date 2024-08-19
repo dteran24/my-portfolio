@@ -4,6 +4,7 @@ import { CgScreen } from "react-icons/cg";
 import { BiDumbbell } from "react-icons/bi";
 import { BsRocketTakeoffFill } from "react-icons/bs";
 import { MdLocalGroceryStore } from "react-icons/md";
+import { FaPaw, FaBookOpen } from "react-icons/fa";
 
 import Project from "../models/ProjectModel";
 import { useState } from "react";
@@ -16,13 +17,12 @@ function ProjectCard(props: React.PropsWithChildren<projectProp>) {
 
   const iconMapping: {
     [key: string]: JSX.Element;
-    rocket: JSX.Element;
-    store: JSX.Element;
-    dumbell: JSX.Element;
   } = {
-    rocket: <BsRocketTakeoffFill color="black" fontSize="8rem" />,
+    rocket: <BsRocketTakeoffFill color="black" fontSize="3rem" />,
     store: <MdLocalGroceryStore color="lightblue" fontSize="3rem" />,
     dumbell: <BiDumbbell color="gray" fontSize="3rem" />,
+    paw: <FaPaw color="green" fontSize="8rem" />,
+    book: <FaBookOpen color="brown" fontSize="3rem" />,
   };
   return (
     <>

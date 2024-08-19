@@ -2,34 +2,23 @@
   "projects": [
     {
       "id": 1,
-      "title": "School Parent App",
-      "icon": "rocket",
-      "description": "Parents create and update profiles easily, while teachers efficiently approve or reject submissions. A three week project to test requirement and quick delivery.",
+      "title": "Adopt a Pet",
+      "icon": "paw",
+      "description": "A web application where you can browse for a furry friend! Created using petfinder API.",
       "image": "",
-      "liveLink": "https://spa-03d0.onrender.com/",
-      "codeLink": "https://github.com/dteran24/sp-app",
+      "liveLink": "https://adopt-site-dt.vercel.app/",
+      "codeLink": "https://github.com/dteran24/adopt-site",
       "tech": [
-        "React.js",
-        "BootStrap",
-        "SQLite",
-        "Node.js",
-        "Express.js",
+        "Next.js",
         "TypeScript",
+        "Tailwind CSS",
+        "MongoDB",
+        "Vercel",
         "GitHub"
       ]
     },
     {
       "id": 2,
-      "title": "Online Store",
-      "icon": "store",
-      "description": "A website where you can shop for items, add to cart and checkout.",
-      "image": "",
-      "liveLink": "",
-      "codeLink": "https://github.com/dteran24/e-Commerce",
-      "tech": ["React.js", "BootStrap", "Netlify", "GitHub"]
-    },
-    {
-      "id": 3,
       "title": "Lift Notes",
       "icon": "dumbell",
       "description": "A mobile app where a user is able to keep track of their performance in the weight room.",
@@ -39,10 +28,49 @@
       "tech": [
         "React.js",
         "Ionic",
-        "Capacitor",
         "TypeScript",
-        "Ionic",
-        "SpringBoot",
+        "Spring Boot",
+        "MySQL",
+        "Railway",
+        "GitHub"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Interview Helper",
+      "icon": "book",
+      "description": "A web application where I can study interview questions.",
+      "image": "",
+      "liveLink": "",
+      "codeLink": "https://github.com/dteran24/e-Commerce",
+      "tech": [
+        "Angular",
+        "TypeScript",
+        "Sass",
+        "Angular Material",
+        "Spring Boot",
+        "MySQL",
+        "Railway",
+        "GitHub"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "School Parent App",
+      "icon": "rocket",
+      "description": "Parents create and update profiles easily, while teachers efficiently approve or reject submissions. A three week project to test requirement and quick delivery.",
+      "image": "",
+      "liveLink": "https://spa-03d0.onrender.com/",
+      "codeLink": "https://github.com/dteran24/sp-app",
+      "tech": [
+        "React.js",
+        "Bootstrap",
+        "SQLite",
+        "Node.js",
+        "Express.js",
+        "TypeScript",
+        "Render",
+        "Jest",
         "GitHub"
       ]
     }

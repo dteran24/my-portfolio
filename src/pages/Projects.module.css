@@ -1,7 +1,6 @@
 .projects {
   min-height: 100vh;
   margin: 0 6rem;
-  padding-bottom: 1rem;
 }
 .projects h1 {
   font-weight: 500;
@@ -13,19 +12,21 @@
   grid-template-columns: 50% auto; /* Two columns */ /* Two rows */
   grid-template-rows: 12rem 14rem;
   gap: 4rem; /* Optional gap between grid items */
+  margin-bottom: 2rem;
 }
 .oneColumn {
   grid-row: span 2;
 }
+
 @media only screen and (max-width: 868px) {
-  .projects{
+  .projects {
     margin: 1rem;
   }
   .cards {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
-  .projects h1{
+  .projects h1 {
     font-size: 2rem;
   }
 }

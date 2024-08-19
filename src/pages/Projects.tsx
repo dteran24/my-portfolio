@@ -18,6 +18,11 @@ function Projects() {
           );
         })}
       </div>
+      <span>
+        *Some applications require a backend service, to reduce costs these
+        services will be turned off 5pm CST and turned back on 9am CST. Thank
+        you for understanding.*
+      </span>
     </section>
   );
 }

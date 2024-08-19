@@ -1,8 +1,8 @@
 import styles from "./AboutMe.module.css";
 function AboutMe() {
   return (
-    <div className={styles.aboutMeContainer}>
-      <h1>About Me</h1>
+    <section className={styles.aboutMeContainer} id="contact">
+      <h1>About Me.</h1>
       <div className={styles.paragraphContainer}>
         <p>
           I have a passion for building and creating, constantly striving to
@@ -17,7 +17,8 @@ function AboutMe() {
           grow alongside my peers.
         </p>
       </div>
-    </div>
+      <h1>Lets Connect!</h1>
+    </section>
   );
 }
 export default AboutMe;

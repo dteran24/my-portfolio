@@ -1,11 +1,17 @@
-.aboutMeContainer{
-  
+.aboutMeContainer {
+  min-height: 100vh;
+  margin: 0 6rem;
 }
-.paragraphContainer{
-
+.aboutMeContainer h1 {
+  font-weight: 500;
+  text-align: left;
+  color: black;
 }
 
-p{
+.paragraphContainer {
+  margin: 0 auto;
+}
+.paragraphContainer p {
   text-align: start;
   font-size: 1.5rem;
 }
