@@ -60,8 +60,7 @@ p {
   display: none;
   justify-content: center;
   gap: 1rem;
-  padding-bottom: 2rem;
-  margin-top: auto;
+  margin: 1.5rem 0;
 }
 .bttn-container {
   opacity: 0;
@@ -128,8 +127,8 @@ a {
   }
   .card-header {
     flex-direction: column;
-    padding: 0 1rem;
-    margin-top: 2rem;
+    padding: 1rem 0;
+    gap: 0;
   }
   .bttn-container {
     display: none;
@@ -140,21 +139,29 @@ a {
   .bttn-container-mobile {
     justify-content: space-around;
     display: flex;
-    padding: 1rem 0;
   }
   .bttn-container-first {
     justify-content: space-around;
   }
   .bttn-container-first button {
-    width: 8rem;
+    width: 30vw;
   }
   .bttn {
-    width: 8rem;
+    width: 30vw;
   }
   .card-container {
     max-height: none;
   }
+  .card h3 {
+    margin: 1rem 0;
+  }
   .card .cardXL {
     height: auto;
+  }
+  .tech {
+    margin-top: 1rem;
+  }
+  .icon {
+    padding-top: 1rem;
   }
 }
