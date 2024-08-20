@@ -15,7 +15,6 @@ interface projectProp {
 function ProjectCard(props: React.PropsWithChildren<projectProp>) {
   const { project } = props;
   const [hover, setHover] = useState(false);
-  const [bttnContainerHover, setBttnContainerHover] = useState(false);
 
   const isMobile = useMediaQuery({ query: "(max-width: 860px)" });
 
