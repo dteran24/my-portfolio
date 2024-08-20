@@ -1,27 +1,39 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
+  overflow: hidden;
+  justify-content: space-between;
   border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  overflow: hidden;
+  h3 {
+    font-weight: 500;
+  }
 }
-.card p {
+
+.cardXL {
+  height: 100%;
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+p {
   text-align: left;
   margin: 0;
   padding: 0 1rem;
 }
-.card h3 {
-  font-weight: 500;
-}
+
 .card-container {
-  height: 100%;
-  width: 100%;
+  max-height: 13rem;
   transition: transform 0.3s ease;
 }
 .card-container:hover {
   transform: translateY(-2rem);
+}
+.card-container:not(:hover) .bttn-container.show {
+  transform: translateY(0); /* Reset transform when not hovering */
 }
 
 .card-header {
@@ -29,8 +41,10 @@
   padding-left: 1rem;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 2rem;
 }
+
 .icon {
   text-align: center;
   padding-top: 2rem;
@@ -38,8 +52,6 @@
 .bttn-container-first {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 2rem;
-  margin-top: auto;
 }
 .bttn-container-first button {
   width: 10rem;
@@ -56,14 +68,17 @@
   visibility: hidden;
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
   gap: 1rem;
-  padding: 1rem 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+  padding: 0.5rem 0;
 }
 .bttn-container.show {
   opacity: 1;
   visibility: visible;
   transform: translateY(-1rem);
+  pointer-events: auto;
 }
 a {
   text-decoration: none;
@@ -71,18 +86,15 @@ a {
 .tech {
   font-size: 0.75rem;
   display: flex;
-  justify-content: flex-start;
-  gap: 0;
   padding-left: 1rem;
-  margin-top: auto;
   flex-wrap: wrap;
+  list-style: none;
+  margin-top: 2rem;
 }
 .tech.first {
   margin-top: 0;
 }
-.tech {
-  list-style: none;
-}
+
 .tech li {
   margin-right: 1rem;
 }
@@ -110,12 +122,13 @@ a {
 .bttn:hover {
   color: #0087ca;
 }
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 895px) {
   .card-container:hover {
     transform: none; /* Disable the transform on hover */
   }
   .card-header {
     flex-direction: column;
+    padding: 0 1rem;
     margin-top: 2rem;
   }
   .bttn-container {
@@ -137,5 +150,11 @@ a {
   }
   .bttn {
     width: 8rem;
+  }
+  .card-container {
+    max-height: none;
+  }
+  .card .cardXL {
+    height: auto;
   }
 }

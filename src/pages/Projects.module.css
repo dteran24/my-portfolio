@@ -1,5 +1,6 @@
 .projects {
   min-height: 100vh;
+  height: 100%;
   margin: 0 6rem;
 }
 .projects h1 {
@@ -9,24 +10,28 @@
 }
 .cards {
   display: grid;
-  grid-template-columns: 50% auto; /* Two columns */ /* Two rows */
-  grid-template-rows: 12rem 14rem;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */ /* Two rows */
+  grid-template-rows: minmax(12rem, auto);
   gap: 4rem; /* Optional gap between grid items */
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .oneColumn {
   grid-row: span 2;
 }
 
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 895px) {
   .projects {
     margin: 1rem;
   }
   .cards {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, 28rem);
+    gap: 2rem;
   }
   .projects h1 {
     font-size: 2rem;
+  }
+  .oneColumn {
+    grid-row: auto;
   }
 }
