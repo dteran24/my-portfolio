@@ -23,7 +23,7 @@
       "icon": "dumbell",
       "description": "A mobile app where a user is able to keep track of their performance in the weight room.",
       "image": "",
-      "liveLink": "",
+      "liveLink": "https://lift-notesv2.onrender.com/",
       "codeLink": "https://github.com/dteran24/lift-notesv2",
       "tech": [
         "React.js",
@@ -41,8 +41,8 @@
       "icon": "book",
       "description": "A web application where I can study the most commonly asked technical and behavioral questions during an interview.",
       "image": "",
-      "liveLink": "",
-      "codeLink": "https://github.com/dteran24/e-Commerce",
+      "liveLink": "https://interview-helper-so5y.onrender.com/",
+      "codeLink": "https://github.com/dteran24/interview-helper",
       "tech": [
         "Angular",
         "TypeScript",

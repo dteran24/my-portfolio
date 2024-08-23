@@ -102,7 +102,7 @@ const Navbar = () => {
                 Projects
               </Link>
             </li>
-            <li className={styles.navListItem}>
+            {/* <li className={styles.navListItem}>
               <Link
                 onClick={() => setIsOpen(false)}
                 activeClass="active"
@@ -114,7 +114,7 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
             <ul className={styles.iconList}>
               {links.map((item) => {
                 return (

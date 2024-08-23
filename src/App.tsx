@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import AboutMe from "./pages/AboutMe";
+// import AboutMe from "./pages/AboutMe";
 import Intro from "./pages/Intro";
 import Projects from "./pages/Projects";
 
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Intro />
       <Projects />
-      <AboutMe />
+      {/* <AboutMe /> */}
     </>
   );
 }
